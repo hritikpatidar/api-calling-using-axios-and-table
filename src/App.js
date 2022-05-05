@@ -1,16 +1,14 @@
 import { Table } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
 const axios = require('axios').default;
 function App() {
   //1. state 
+  const [value, setValue] = useState()
   const [teacher, setTeacher] = useState([]);
   useEffect(() => {
     getData();
   }, [])
-  const { id } = useParams();
-  const location = useLocation();
   //2. function defination
   let getData =async()=>{
     try {
@@ -25,7 +23,9 @@ function App() {
     }
   }
 
-  let gettitle=()=>{
+  let gettitle=(id)=>{
+    console.log(id);
+    //https://myfbspike.herokuapp.com/api/posts/1/
   }
   
   //console.log('bad me',teacher);
@@ -48,14 +48,16 @@ function App() {
           {
             teacher.map((cv,index,arr)=>{
               //console.log("cv",cv)
-              //console.log(arr[index].userID)
+              //console.log(cv.id)
+              //setValue(cv.id)
               return(
                 <tr key={index}>
                   <td>{cv.userId}</td>
-                  <td>{cv.id}</td>
-                  <td onClick={()=>{ gettitle()}}>{cv.title}</td>
+                  <td id={cv.id}>{cv.id}</td>
+                  <td onClick={()=>{ gettitle(cv.id)}}>{cv.title}</td>
                   <td>{cv.body}</td>
                 </tr>
+                
               )
             })
           }
