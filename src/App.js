@@ -62,6 +62,7 @@ function App() {
                   <td onClick={()=>{ gettitle(id)}}>{cv.title}</td>
                   <td>{cv.body}</td>
                 </tr>
+                
               )
             })
           }

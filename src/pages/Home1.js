@@ -25,7 +25,7 @@ export default function Home1() {
         //console.error(error);
       }
     }
-    console.log("phle",teacher);
+    //console.log("phle",teacher);
     return (
         <>
       {/* <Button variant="primary" onClick={ (e)=>{ getData(e) }}>Click me</Button> */}
