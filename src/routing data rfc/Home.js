@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap'
 import { useParams } from 'react-router-dom';
 
-export default function Home1() {
+export default function Home() {
     //1. state 
     const [teacher, setTeacher] = useState([]);
 
     useEffect(() => {
       getData1();
-    },[] );
+    },[]);
     const params = useParams()
     //console.log(params.id)
     //2 function defination

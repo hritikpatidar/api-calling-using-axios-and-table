@@ -39,7 +39,7 @@ function App() {
   //3. return statement /jsx
   return (
     <>
-      {/* <Button variant="primary" onClick={ (e)=>{ getData(e) }}>Click me</Button> */}
+      
       <Table striped bordered hover>
         <thead>
           <tr>
