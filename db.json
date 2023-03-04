@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "ritik",
+      "surname": "patidar"
+    }, {
+      "id":2 ,
+      "name": "jyoti",
+      "surname": "patidar"
+    }, {
+      "id": 3,
+      "name": "saloni",
+      "surname": "patidar"
+    }, {
+      "id": 4,
+      "name": "prachi",
+      "surname": "patidar"
+    }, {
+      "id": 5,
+      "name": "deepak",
+      "surname": "patidar"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
